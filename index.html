@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gene Chen · Physics Ph.D. candidate, University of Virginia</title>
+  <meta name="description" content="Gene Chen is a physics Ph.D. candidate at the University of Virginia working on stochastic dynamics and numerical methods: Markov chains, Langevin dynamics, the Mpemba effect, and population and neural dynamics.">
+  <meta name="author" content="Gene Chen">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  Editing notes
+  - Every unconfirmed detail is marked with a highlighted mark (class "todo") so it shows on the page.
+    Find them all with:  grep -n 'class="todo"' index.html
+    Delete each mark once the detail is confirmed.
+  - Page text is taken from resume.tex; change both together.
+-->
+
+<header class="site-header">
+  <h1 class="name">Gene Chen</h1>
+  <nav aria-label="Sections">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#talks">Talks</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section id="about" aria-labelledby="about-h">
+    <h2 id="about-h">About</h2>
+    <p class="lede">Physics Ph.D. candidate studying fluctuating and evolving systems—Markov chains, Langevin dynamics, population and neural dynamics—with analytical theory, numerical computation and experimental data.</p>
+    <p>I am in the physics Ph.D. program at the University of Virginia, advised by Prof. Marija Vucelja (advanced to candidacy; expected 2028). My main thread is stochastic dynamics and the numerical methods that make it tractable, most recently the Mpemba effect, where a system that starts farther from equilibrium can relax faster than one that starts closer. Alongside it, projects in population biology and EEG neuroscience, and earlier work on cosmic-ray data at the University of Maryland (B.S. in physics, 2021), show the same toolkit applied across fields.</p>
+  </section>
+
+  <section id="research" aria-labelledby="research-h">
+    <h2 id="research-h">Research</h2>
+
+    <article class="entry">
+      <h3>Lifting a Markov chain into the Mpemba effect</h3>
+      <p class="meta"><span class="context">University of Virginia · Advisor: Prof. Marija Vucelja</span><span class="dates">2026–present</span></p>
+      <p>I am lead author of a study of irreversible (lifted) Markov chains—Glauber dynamics of the 1D Ising model under skew detailed balance—and of when breaking detailed balance induces a Mpemba-like relaxation speedup. I mapped the parameter space with Monte Carlo simulation and spectral analysis of the generator in Python, explained the regimes analytically, and explored MCMC acceleration. To be presented at the 2027 APS Global Physics Summit.</p>
+    </article>
+
+    <article class="entry">
+      <h3>Brain criticality from EEG data</h3>
+      <p class="meta"><span class="context">Initiated at the 2026 APS Global Physics Summit with Richa Phogat (University of Newcastle, Australia) and Dima Watkins (UVA Physics)</span><span class="dates">2026–present</span></p>
+      <p>I model alpha-band EEG as active particles driven by colored noise to capture signatures of criticality, and estimate the distance from criticality in experimental recordings. The work uses signal processing, regression and highly comparative time-series analysis (hctsa) in MATLAB, with neural field theory for model building across physics and neuroscience.</p>
+    </article>
+
+    <article class="entry">
+      <h3>Extending the Mpemba effect to the underdamped regime</h3>
+      <p class="meta"><span class="context">University of Virginia · Advisor: Prof. Marija Vucelja · with S. Aharony Shapira and O. Raz (Weizmann)</span><span class="dates">2023–2026</span></p>
+      <p>I solved the Klein–Kramers operator for a Brownian particle in a potential by discretization, matrix continued fractions and sparse eigensolvers in Mathematica on UVA’s Rivanna cluster. The resulting paper, which I co-authored, shows that the overdamped Mpemba effect persists at finite damping. It is submitted to <em>J. Phys. A: Math. Theor.</em>; the preprint is <a href="https://doi.org/10.48550/arXiv.2607.11797">arXiv:2607.11797</a>.</p>
+    </article>
+
+    <article class="entry">
+      <h3>Lagrangian formulation of Lotka–Volterra dynamics</h3>
+      <p class="meta"><span class="context">Self-initiated project with Dima Watkins (UVA Physics), grown out of a weekly extracurricular discussion group</span><span class="dates">2022–2025</span></p>
+      <p>I applied analytical mechanics to predator–prey dynamics. The work was a contributed talk at the 2026 APS Global Physics Summit.</p>
+    </article>
+
+    <article class="entry">
+      <h3>Cosmic Ray Energetics and Mass (ISS-CREAM)</h3>
+      <p class="meta"><span class="context">University of Maryland · Advisor: Prof. Eun-Suk Seo</span><span class="dates">2019–2022</span></p>
+      <p>I derived channel gains to convert raw ISS-CREAM calorimeter ADC signals into energy for the cosmic-ray spectrum, with analysis in Python (pandas) on remote Linux servers over SSH. I am a co-author on the ICRC 2021 proceedings.</p>
+    </article>
+  </section>
+
+  <section id="publications" aria-labelledby="publications-h">
+    <h2 id="publications-h">Publications</h2>
+    <ol class="pubs">
+      <li>
+        S. Aharony Shapira, <strong>G. Chen</strong>, M. Vucelja, O. Raz, “Extending the Mpemba effect to the underdamped realm,” submitted to <em>J. Phys. A: Math. Theor.</em> (2026).
+        <span class="links"><a href="https://doi.org/10.48550/arXiv.2607.11797">doi:10.48550/arXiv.2607.11797</a></span>
+      </li>
+      <li>
+        E.-S. Seo <em>et al.</em> (incl. <strong>Y. Chen</strong>), “Results from the Cosmic Ray Energetics And Mass for the International Space Station (ISS-CREAM) experiment,” <em>PoS(ICRC2021)</em> 095.
+        <span class="links"><a href="https://doi.org/10.22323/1.395.0095">doi:10.22323/1.395.0095</a></span>
+      </li>
+    </ol>
+  </section>
+
+  <section id="talks" aria-labelledby="talks-h">
+    <h2 id="talks-h">Talks</h2>
+    <ul class="talks">
+      <li>
+        <p class="talk-head"><strong>APS Global Physics Summit 2027</strong> <span class="tag">upcoming</span></p>
+        <p>Lifting a Markov chain into the Mpemba effect (contributed talk; working title).</p>
+      </li>
+      <li>
+        <p class="talk-head"><strong>APS Global Physics Summit 2026</strong></p>
+        <p>Lagrangian formulation of Lotka–Volterra dynamics (contributed talk).</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="cv" aria-labelledby="cv-h">
+    <h2 id="cv-h">CV</h2>
+    <p><a class="button" href="cv.pdf">Download CV (PDF)</a></p>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h">Contact</h2>
+    <ul class="contact">
+      <li><span class="label">Email</span> <a href="mailto:genec420@virginia.edu">genec420@virginia.edu</a></li>
+      <li><span class="label">GitHub</span> <a href="https://github.com/MetaGable">github.com/MetaGable</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Gene Chen · University of Virginia · Charlottesville, VA</p>
+</footer>
+
+</body>
+</html>
